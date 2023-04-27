@@ -18,7 +18,6 @@ function App() {
 
   // Activar evento de scroll
   useEffect(() => {
-
     window.addEventListener("load", () => {
       setCargando(false);
     });
@@ -41,13 +40,14 @@ function App() {
 
   return (
     <>
-      {cargando ? (
+      {cargando && (
         <div className="flex justify-center items-center fixed top-0 bottom-0 right-0 left-0 bg-white">
           <div className="w-[120px] h-[120px]">
             <img src={spinner} alt="Spinner" />
           </div>
         </div>
-      ) : (
+      )}
+      {!cargando && (
         <>
           <div className="px-20 py-5 lg:px-20 xl:px-40 2xl:px-60 pb-20 md:pt-20 min-h-screen bg-slate-50 select-none">
             <ButtonTop estamosTop={estamosTop} />
