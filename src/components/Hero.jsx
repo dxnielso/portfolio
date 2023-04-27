@@ -6,7 +6,7 @@ import foto from "../assets/foto2.png";
 const Hero = () => {
   return (
     <main
-      className="md:h-[calc(100vh-80px)] w-full flex flex-col justify-center items-center gap-y-10 lg:gap-y-16 xl:gap-y-20 sm:px-32 lg:px-40 xl:px-40 overflow-hidden"
+      className="lg:h-[calc(100vh-80px)] w-full flex flex-col justify-center items-center gap-y-10 lg:gap-y-16 xl:gap-y-20 sm:px-32 lg:px-40 xl:px-40 overflow-hidden"
       id="home"
     >
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10">
