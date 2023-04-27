@@ -5,6 +5,7 @@ import Amazon from "../assets/amazon_capture.png";
 import AirTravel from "../assets/airtravel_capture.png";
 import PolloPepe from "../assets/pollopepe_capture.png";
 import Bank from "../assets/bank_capture.png";
+import BarberShop from '../assets/fadefinder_capture.png'
 
 export const skills = {
   frontend: [
@@ -106,14 +107,14 @@ export const portfolio = [
   {
     id: 0,
     titulo: "Amazon Clon | Web App",
-    tecnologias: ["React JS"],
+    tecnologias: ["React JS", "HTML", "CSS", "Firebase"],
     image: Amazon,
     demo: "https://clon-dee88.web.app/",
   },
   {
     id: 1,
     titulo: "AirTravel | Landing Page",
-    tecnologias: ["HTML", "CSS", "Javascript"],
+    tecnologias: ["HTML", "TailwindCSS", "Javascript"],
     image: AirTravel,
     demo: "https://dxnielso.github.io/airtravel/",
   },
@@ -130,5 +131,12 @@ export const portfolio = [
     tecnologias: ["HTML", "CSS", "Javascript"],
     image: Bank,
     demo: "https://dxnielso.github.io/bank-card-form/",
+  },
+  {
+    id: 4,
+    titulo: "Barbershop App",
+    tecnologias: ["HTML", "TailwindCSS", "Javascript", "React JS", "Express", "Node.js", "MySQL"],
+    image: BarberShop,
+    demo: "",
   },
 ];

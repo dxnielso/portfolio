@@ -9,7 +9,7 @@ const PortfolioCard = ({ proyecto }) => {
       </div>
       <div className="flex flex-col gap-y-3">
         <h3 className="text-base font-bold text-gray-800">{proyecto.titulo}</h3>
-        <div className="w-full flex justify-start items-center gap-x-2">
+        <div className="w-full flex justify-start items-center gap-2 flex-wrap">
           {proyecto.tecnologias.map((tecnologia) => (
             <span
               className="text-xs font-light text-white px-2 py-1 rounded-full bg-blue-500 hover:opacity-80 duration-200"
