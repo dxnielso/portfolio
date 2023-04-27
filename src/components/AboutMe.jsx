@@ -11,7 +11,7 @@ const AboutMe = () => {
     <>
       <Container id="about-me">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">About Me</h2>
-        <div className="w-full grid grid-cols-3 gap-x-3 mb-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
           <AboutMeBox
             texto="Experience"
             icono={<BiMedal className="text-xl" />}

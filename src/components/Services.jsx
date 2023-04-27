@@ -22,7 +22,7 @@ const Services = () => {
             onClickCloseModal={() => setMostrarModal(false)}
           />
         )}
-        <div className="w-full grid grid-cols-2 gap-5 lg:grid-cols-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3">
           {services.map((service) => (
             <Service
               key={service.id}
