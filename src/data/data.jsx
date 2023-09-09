@@ -6,6 +6,7 @@ import AirTravel from "../assets/airtravel_capture.png";
 import PolloPepe from "../assets/pollopepe_capture.png";
 import Bank from "../assets/bank_capture.png";
 import BarberShop from '../assets/fadefinder_capture.png'
+import Starbucks from '../assets/starbucks_capture.png';
 
 export const skills = {
   frontend: [
@@ -138,5 +139,12 @@ export const portfolio = [
     tecnologias: ["HTML", "TailwindCSS", "Javascript", "React JS", "Express", "Node.js", "MySQL"],
     image: BarberShop,
     demo: "",
+  },
+  {
+    id: 5,
+    titulo: "Starbucks | Landing page",
+    tecnologias: ["Astro", "TailwindCSS", "React JS"],
+    image: Starbucks,
+    demo: "https://dxnielso.github.io/starbucks/",
   },
 ];
