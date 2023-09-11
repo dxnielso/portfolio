@@ -19,7 +19,7 @@ const AboutMe = () => {
           <AboutMeBox
             texto="Completados"
             icono={<GrBriefcase className="text-2xl" />}
-            extra="+10 projectos"
+            extra="+10 proyectos"
           />
           <AboutMeBox
             texto="Soporte"

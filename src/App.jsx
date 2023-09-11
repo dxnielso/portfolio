@@ -48,7 +48,7 @@ function App() {
         </div>
       )} */}
       <>
-        <div className="px-20 py-5 lg:px-20 xl:px-40 2xl:px-60 pb-20 md:pt-20 min-h-screen bg-slate-50 select-none">
+        <div className="px-10 py-5 lg:px-20 xl:px-40 2xl:px-60 pb-20 md:pt-20 min-h-screen bg-slate-50 select-none">
           <ButtonTop estamosTop={estamosTop} />
           <BarraLateral />
           <Header estamosTop={estamosTop} />

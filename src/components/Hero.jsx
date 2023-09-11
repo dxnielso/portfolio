@@ -1,7 +1,8 @@
 import ButtonIcon from "./ButtonIcon";
-import { AiOutlineSend, AiOutlineArrowDown } from "react-icons/ai";
+import { AiOutlineSend, AiOutlineArrowDown, AiOutlineGithub, AiOutlineLinkedin, AiOutlineFilePdf } from "react-icons/ai";
 import { Link } from "react-scroll";
 import foto from "../assets/foto2.png";
+import cv from '../assets/CV_Daniel_Ramon_Solis_Medina.pdf'
 
 const Hero = () => {
   return (
@@ -15,8 +16,21 @@ const Hero = () => {
           <h2 className="text-gray-800 text-2xl font-medium">
             Frontend Developer
           </h2>
+          <div className="flex sm:hidden justify-start items-center gap-x-5 mb-5">
+            <a href="https://github.com/dxnielso" target="_blank">
+              <AiOutlineGithub className="text-3xl text-gray-900 duration-200 hover:opacity-80" />
+            </a>
+            <a href="https://www.linkedin.com/in/dxnielso/" target="_blank">
+              <AiOutlineLinkedin className="text-3xl text-gray-900 duration-200 hover:opacity-80" />
+            </a>
+            <a href={cv} download="CV_Daniel_Ramon_Solis_Medina">
+              <AiOutlineFilePdf className="text-3xl text-gray-900 duration-200 hover:opacity-80" />
+            </a>
+          </div>
           <p className="text-gray-500 font-normal text-base">
-          Soy estudiante y desarrollador web frontend, comprometido con la calidad, la excelencia y el aprendizaje continuo para crear soluciones web efectivas y atractivas.
+            Soy estudiante y desarrollador web frontend, comprometido con la
+            calidad, la excelencia y el aprendizaje continuo para crear
+            soluciones web efectivas y atractivas.
           </p>
 
           <Link
