@@ -68,39 +68,24 @@ export const skills = {
 export const services = [
   {
     id: 0,
-    titulo: "Landing page development",
-    icono: <RiPagesLine className="text-2xl" />,
+    titulo: "Desarrollo de Landing page",
+    icono: <RiPagesLine className="text-3xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />,
     descripcion:
-      "The Landing Page Development service involves the creation of a web page specifically designed to capture the attention of visitors and persuade them to perform a certain action. Landing pages are typically single page and have a very sharp focus, with a clean design and clear structure.",
-    puntos: [
-      "I develop the user interface",
-      "Web page development",
-      "I create ux element interactions",
-    ],
+      "El servicio Landing page implica la creación de una página web diseñada para captar visitantes y persuadirlos a actuar, con diseño limpio y enfoque claro.",
   },
   {
     id: 1,
-    titulo: "Design and development of user interfaces (UI/UX)",
-    icono: <BiCodeAlt className="text-2xl" />,
+    titulo: "Diseño y desarrollo de interfaces de usuario (UI/UX).",
+    icono: <BiCodeAlt className="text-3xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />,
     descripcion:
-      "User Interface Design and Development (UI/UX) services that improve the user experience, increase retention and maximize interaction with your brand or product.",
-    puntos: [
-      "I develop the user interface",
-      "Web page development",
-      "I create ux element interactions",
-    ],
+      "Servicios de Diseño y Desarrollo de Interfaz de Usuario (UI/UX) que mejoran la experiencia del usuario y la interacción.",
   },
   {
     id: 2,
-    titulo: "Development of personal websites",
-    icono: <AiOutlineUser className="text-2xl" />,
+    titulo: "Desarrollo de sitios web personales",
+    icono: <AiOutlineUser className="text-3xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />,
     descripcion:
-      "Customized Personal Website Development service, which reflects the client's identity and highlights their skills and achievements, with a modern and attractive design to impress visitors and employers.",
-    puntos: [
-      "I develop the user interface",
-      "Web page development",
-      "I create ux element interactions",
-    ],
+      "Servicio de Desarrollo de Sitio Web Personalizado que refleja la identidad del cliente y destaca habilidades y logros.",
   },
 ];
 

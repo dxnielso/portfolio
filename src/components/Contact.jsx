@@ -58,24 +58,24 @@ const Contact = () => {
 
   return (
     <>
-      <Container id="contact" titulo="Contact Me">
+      <Container id="contact" titulo="Contacto">
         <p className="text-base font-medium text-gray-900 mb-8">
-          Write me your project
+          Platicame sobre tu proyecto
         </p>
         <form action="" className="w-full flex flex-col gap-y-6" ref={form} data-aos="fade-up">
           <ContactInput
             id="name"
             name="user_name"
-            texto="Name"
-            placeholder="Insert your name"
+            texto="Nombre"
+            placeholder="Escribe tu nombre"
             valor={name}
             onChange={setName}
           />
           <ContactInput
             id="mail"
             name="user_email"
-            texto="Mail"
-            placeholder="Insert your email"
+            texto="Correo electrónico"
+            placeholder="Escribe tu correo electrónico"
             valor={mail}
             onChange={setMail}
           />
@@ -84,20 +84,20 @@ const Contact = () => {
               htmlFor="project"
               className="absolute -top-3 left-4 bg-slate-50 text-sm text-gray-500 px-1"
             >
-              Project
+              Projecto
             </label>
             <textarea
               type="text"
               id="project"
-              name="message"
-              placeholder="Write your project"
-              className="w-full h-full px-6 py-3 text-base font-light text-gray-900 border border-gray-300 rounded-2xl bg-slate-50 min-h-[200px] focus:border-gray-500 duration-200"
+              name="Mensaje"
+              placeholder="Cuentame sobre tu proyecto"
+              className="w-full h-full px-6 py-3 text-base font-light text-gray-900 border border-gray-300 rounded-2xl bg-slate-50 min-h-[200px] focus:border-gray-500 focus:shadow-md duration-300"
               value={project}
               onChange={(e) => setProject(e.target.value)}
             ></textarea>
           </div>
           <ButtonIcon
-            texto="Send Message"
+            texto="Enviar mensaje"
             icono={<AiOutlineSend className="text-2xl text-white" />}
             onClick={(e) => onSubmitForm(e)}
             disabled={true}

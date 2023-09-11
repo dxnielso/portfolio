@@ -16,9 +16,7 @@ const Hero = () => {
             Frontend Developer
           </h2>
           <p className="text-gray-500 font-normal text-base">
-            I am a student and frontend web developer, committed to quality,
-            excellence and continuous learning to create effective and
-            attractive web solutions.
+          Soy estudiante y desarrollador web frontend, comprometido con la calidad, la excelencia y el aprendizaje continuo para crear soluciones web efectivas y atractivas.
           </p>
 
           <Link
@@ -31,12 +29,12 @@ const Hero = () => {
             className="cursor-pointer hidden md:block"
           >
             <ButtonIcon
-              texto="¡Contact me!"
+              texto="Contáctame"
               icono={<AiOutlineSend className="text-2xl text-white" />}
             />
           </Link>
         </div>
-        <div data-aos="fade-left" className="lg:w-1/2">
+        <div data-aos="zoom-in-up" className="lg:w-1/2">
           <img src={foto} alt="Daniel Solís" />
         </div>
       </div>
@@ -47,7 +45,7 @@ const Hero = () => {
         smooth={true}
         offset={-80}
         duration={400}
-        className="cursor-pointer hidden md:block"
+        className="cursor-pointer hidden md:block animate-bounce"
       >
         <AiOutlineArrowDown className="text-2xl" />
       </Link>

@@ -6,8 +6,8 @@ const Portfolio = () => {
   
   return (
     <>
-      <Container id="portfolio" titulo="Portfolio">
-        <div className="grid grid-cols-1 gap-5 pb-1 lg:grid-cols-2">
+      <Container id="portfolio" titulo="Portafolio">
+        <div className="grid grid-cols-1 gap-10 pb-1 lg:grid-cols-2">
           {portfolio.map((proyecto) => (
             <PortfolioCard key={proyecto.id} proyecto={proyecto} />
           ))}

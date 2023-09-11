@@ -4,7 +4,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-white pb-36 border-t border-gray-200 flex flex-col justify-start items-center py-10 gap-y-6 select-none">
+    <footer className="bg-white pb-28 border-t border-gray-200 flex flex-col justify-start items-center py-10 gap-y-6 select-none">
       <h5 className="text-3xl font-semibold text-gray-800">Daniel Solís</h5>
       <ul className="flex justify-center items-center gap-x-6 text-gray-800 text-base font-normal">
         <Link
@@ -16,7 +16,7 @@ const Footer = () => {
           duration={500}
           className="cursor-pointer duration-200 hover:opacity-80"
         >
-          About
+          Sobre mi
         </Link>
         <Link
           activeClass=""
@@ -27,7 +27,7 @@ const Footer = () => {
           duration={500}
           className="cursor-pointer duration-200 hover:opacity-80"
         >
-          Projects
+          Portafolio
         </Link>
         <Link
           activeClass=""
@@ -38,7 +38,7 @@ const Footer = () => {
           duration={500}
           className="cursor-pointer duration-200 hover:opacity-80"
         >
-          Services
+          Servicios
         </Link>
       </ul>
 
@@ -54,7 +54,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="italic text-sm font-light">© Daniel Solís. All rights reserved</p>
+      <p className="text-sm font-light">Designed by Daniel Solís</p>
     </footer>
   );
 };

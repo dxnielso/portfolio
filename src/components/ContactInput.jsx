@@ -11,8 +11,9 @@ const ContactInput = ({ id, name, texto, placeholder, valor, onChange }) => {
         type="text"
         id={id}
         name={name}
+        autoComplete="off"
         placeholder={placeholder}
-        className="w-full h-full px-6 py-3 text-base font-light text-gray-900 border border-gray-300 rounded-2xl bg-slate-50 focus:border-gray-500 duration-200"
+        className="w-full h-full px-6 py-3 text-base font-light text-gray-900 border border-gray-300 rounded-2xl bg-slate-50 focus:border-gray-500 focus:shadow-md duration-300"
         value={valor}
         onChange={e => onChange(e.target.value)}
       />

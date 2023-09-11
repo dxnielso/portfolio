@@ -9,31 +9,30 @@ import cv from '../assets/CV_Daniel_Ramon_Solis_Medina.pdf'
 const AboutMe = () => {
   return (
     <>
-      <Container id="about-me">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">About Me</h2>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+      <Container id="about-me" titulo="Sobre mi">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-12">
           <AboutMeBox
-            texto="Experience"
-            icono={<BiMedal className="text-xl" />}
-            extra="+1 year"
+            texto="Experiencia"
+            icono={<BiMedal className="text-2xl" />}
+            extra="+2 años"
           />
           <AboutMeBox
-            texto="Completed"
-            icono={<GrBriefcase className="text-xl" />}
-            extra="+10 projects"
+            texto="Completados"
+            icono={<GrBriefcase className="text-2xl" />}
+            extra="+10 projectos"
           />
           <AboutMeBox
-            texto="Support"
-            icono={<BiSupport className="text-xl" />}
+            texto="Soporte"
+            icono={<BiSupport className="text-2xl" />}
             extra="Online 24/7"
           />
         </div>
-        <p className="text-gray-600 font-normal text-base text-center mb-8">
-          Frontend developer, I create web pages with UI/UX user interface. I am a passionate frontend web developer, dedicated to creating unique and effective solutions. I always seek to learn and improve to offer quality work that exceeds customer expectations.
-        </p>
-        <a href={cv} download="CV_Daniel_Ramon_Solis_Medina">
+        {/* <p className="text-gray-600 font-normal text-base text-center mb-10">
+        Soy un Desarrollador Frontend que crea impresionantes páginas web con interfaces de usuario cautivadoras. Mi pasión y dedicación se traducen en soluciones web únicas y altamente efectivas. Siempre me esfuerzo por superar las expectativas del cliente, comprometiéndome con la excelencia en cada proyecto.
+        </p> */}
+        <a href={cv} download="CV_Daniel_Ramon_Solis_Medina" >
           <ButtonIcon
-            texto="Download CV"
+            texto="Descargar CV"
             icono={<AiOutlineFilePdf className="text-2xl text-white" />}
           />
         </a>

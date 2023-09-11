@@ -39,12 +39,12 @@ const Navbar = () => {
       {/* laptop menu */}
       <nav className="hidden md:flex">
         <ul className="flex gap-x-7">
-          <LinkMenu texto="Home" to="home" />
-          <LinkMenu texto="About" to="about-me" />
-          <LinkMenu texto="Skills" to="skills" />
-          <LinkMenu texto="Services" to="services" />
-          <LinkMenu texto="Portfolio" to="portfolio" />
-          <LinkMenu texto="Contact" to="contact" />
+          <LinkMenu texto="Inicio" to="home" />
+          <LinkMenu texto="Sobre mi" to="about-me" />
+          <LinkMenu texto="Habilidades" to="skills" />
+          <LinkMenu texto="Servicios" to="services" />
+          <LinkMenu texto="Portafolio" to="portfolio" />
+          <LinkMenu texto="Contacto" to="contact" />
         </ul>
       </nav>
 
@@ -68,32 +68,32 @@ const Navbar = () => {
           <ul className="grid grid-cols-3 grid-rows-2 w-full h-full">
             <LinkMenuPhone
               icono={<AiOutlineHome className="text-2xl" />}
-              texto="Home"
+              texto="Inicio"
               to="home"
             />
             <LinkMenuPhone
               icono={<AiOutlineUser className="text-2xl" />}
-              texto="About"
+              texto="Sobre mi"
               to="about-me"
             />
             <LinkMenuPhone
               icono={<AiOutlineFileDone className="text-2xl" />}
-              texto="Skills"
+              texto="Habilidades"
               to="skills"
             />
             <LinkMenuPhone
               icono={<BsBriefcase className="text-2xl" />}
-              texto="Services"
+              texto="Servicios"
               to="services"
             />
             <LinkMenuPhone
               icono={<AiOutlinePicture className="text-2xl" />}
-              texto="Portfolio"
+              texto="Portafolio"
               to="portfolio"
             />
             <LinkMenuPhone
               icono={<AiOutlineSend className="text-2xl" />}
-              texto="Contact"
+              texto="Contacto"
               to="contact"
             />
           </ul>

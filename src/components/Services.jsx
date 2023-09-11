@@ -15,21 +15,20 @@ const Services = () => {
 
   return (
     <>
-      <Container id="services" titulo="Services">
+      <Container id="services" titulo="Servicios">
         {mostrarModal && (
           <Modal
             servicio={servicioSeleccionado}
             onClickCloseModal={() => setMostrarModal(false)}
           />
         )}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-7 xl:grid-cols-3">
           {services.map((service) => (
             <Service
               key={service.id}
               icono={service.icono}
               titulo={service.titulo}
               descripcion={service.descripcion}
-              puntos={service.puntos}
               onClickOpenModal={() => handleClickModal(service.id)}
             />
           ))}
