@@ -1,0 +1,56 @@
+---
+import SectionLayout from "@/layouts/SectionLayout.astro";
+// import Certificate from "../Certificate.astro";
+import Certificate1Image from "@/assets/certificates/certificate1.png";
+import Certificate2Image from "@/assets/certificates/certificate2.png";
+import Certificate3Image from "@/assets/certificates/certificate3.png";
+import Certificate from "../icons/Certificate.astro";
+// import Certificate4Image from "../assets/certificates/certificate4.png"
+
+const CERTIFICATES = [
+  {
+    title: "Fundamentos esenciales de la programación",
+    from: ["LinkedIn"],
+    image: Certificate1Image,
+  },
+  {
+    title: "Fundamentos profesionales del desarrollo de software",
+    from: ["LinkedIn Learning", "Microsoft"],
+    image: Certificate2Image,
+  },
+  {
+    title:
+      "Introducción a las habilidades profesionales en el desarrollo de software",
+    from: ["LinkedIn Learning"],
+    image: Certificate3Image,
+  },
+  // {
+  //   title: "Fundamentos de inteligencia artificial",
+  //   from: ["Fundación Carlos Slim"],
+  //   image: Certificate4Image,
+  // },
+];
+---
+
+<SectionLayout title="Certificaciones">
+  <ul class="flex flex-col gap-y-6">
+    {
+      CERTIFICATES.map((certificate) => (
+        // <Certificate certificate={certificate} />
+        <li class="group flex space-x-3 items-start">
+          <Certificate class="size-7" />
+          <div class="font-azeret font-light text-[15px] flex-1 text-white/70 hover:text-white duration-200">
+            {certificate.title}
+            <div class="flex space-x-2 group-hover:text-white">
+              {certificate.from.map((item, index) => (
+                <span class="font-light text-primary/70 group-hover:text-primary">
+                  {item} {index < certificate.from.length - 1 && "-"}
+                </span>
+              ))}
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</SectionLayout>

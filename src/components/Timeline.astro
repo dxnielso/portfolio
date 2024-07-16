@@ -1,0 +1,27 @@
+---
+import TimelineEvent from "./TimelineEvent.astro";
+import Backpack from "./icons/Backpack.astro";
+import School from "./icons/School.astro";
+
+console.log(typeof Backpack);
+---
+
+<ol class="relative w-auto border-s border-gray-200 dark:border-gray-700 mx-5">
+  <TimelineEvent
+    title="Ingeniería en Software"
+    current={true}
+    description="En la Universidad Politécnica de Pénjamo, me sumerjo en el mundo de la ingeniería en software, explorando el desarrollo web, móvil e inteligencia artificial para afrontar los desafíos tecnológicos del futuro."
+    date="1 de septiembre, 2021 - Actualmente"
+    school="Universidad Politécnica de Pénjamo"
+  >
+    <School />
+  </TimelineEvent>
+  <TimelineEvent
+    title="Técnico en Programación"
+    description="En mi bachillerato, obtuve el título de Técnico en Programación, donde adquirí sólidos fundamentos en desarrollo de software, preparándome para dar mis primeros pasos en el mundo tecnológico."
+    date="20 de agosto, 2018 - 30 de junio, 2021"
+    school="CBTis 171"
+  >
+    <Backpack />
+  </TimelineEvent>
+</ol>

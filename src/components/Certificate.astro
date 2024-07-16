@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import ThreeDCarsComponent from "@/components/acertinity/ThreeDCarsComponent";
+import Tag from "./Tag.astro";
+
+interface Props {
+  certificate: {
+    title: string;
+    from: string[];
+    image: ImageMetadata;
+  };
+}
+const { title, from, image } = Astro.props.certificate;
+---
+
+<!-- <ThreeDCarsComponent
+  client:idle
+  className="flex items-start gap-x-5 overflow-hidden w-full h-full rounded-md hover:bg-slate-50/5 [border-width:0.1px] border-transparent hover:border-white/10 duration-75 group"
+> -->
+<div class="flex items-start gap-x-5 w-full h-full duration-100 group">
+  <h3 class="font-azeret text-base w-fit text-white/80 hover:text-white">
+    {title}
+  </h3>
+  <!-- <div class="flex gap-2 flex-wrap">
+    {from.map((f) => <Tag text={f} />)}
+  </div> -->
+</div>
+<!-- </ThreeDCarsComponent> -->

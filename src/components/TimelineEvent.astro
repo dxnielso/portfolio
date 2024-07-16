@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  current?: boolean;
+  date: string;
+  description: string;
+  school: string;
+}
+const { title, current = false, date, description, school } = Astro.props;
+---
+
+<li class="mb-10 ms-7">
+  <span
+    class="absolute flex items-center justify-center size-6 rounded-full -start-3 ring-8 bg-[rgba(60,70,93,1)] ring-[#21293d]"
+  >
+    <slot />
+  </span>
+  <h3 class="flex items-center mb-2 text-lg font-semibold text-white">
+    {title}
+    {
+      current && (
+        <span class="bg-blue-100 text-sm font-normal me-2 px-2.5 py-0.5 rounded bg-white/30 text-white ms-3">
+          Actualmente
+        </span>
+      )
+    }
+  </h3>
+  <span class="block mb-4 text-sm font-light leading-none text-white/50"
+    >{date}</span
+  >
+  <span class="block mb-2 text-base font-bold leading-none text-primary"
+    >{school}</span
+  >
+  <p class="text-base font-light text-white/80 leading-relaxed">
+    {description}
+  </p>
+</li>

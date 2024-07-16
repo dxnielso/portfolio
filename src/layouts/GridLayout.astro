@@ -1,0 +1,12 @@
+<div
+  class="flex flex-col w-full px-5 py-16 lg:grid lg:grid-cols-2 lg:space-x-14 lg:mx-auto lg:max-w-[1000px] xl:max-w-[1150px] 2xl:py-28"
+>
+  <div
+    class="z-100 lg:fixed lg:w-[480px] xl:w-[555px] md:h-[50vh] lg:h-[calc(100vh-128px)] 2xl:h-[calc(100vh-224px)] relative w-full mb-28 lg:mb-0"
+  >
+    <slot name="static" />
+  </div>
+  <div class="relative z-100 col-start-2 w-auto">
+    <slot name="scroll" />
+  </div>
+</div>

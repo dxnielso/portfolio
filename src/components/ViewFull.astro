@@ -1,0 +1,25 @@
+---
+interface Props {
+  text: string;
+  link: string;
+}
+const { text, link } = Astro.props;
+---
+
+<a href={link} class="flex justify-start items-center gap-x-2 group"
+  ><span
+    class="font-azeret font-semibold text-base text-white/80 border-b-2 border-b-transparent duration-100 group-hover:border-b-[rgba(60,70,93,1)]"
+    >{text}</span
+  ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-arrow-right w-7 h-6 stroke-[1.5px] stroke-[#c5c5c5] fill-none duration-100 group-hover:translate-x-1"
+    viewBox="0 0 24 24"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M5 12l14 0"></path>
+    <path d="M13 18l6 -6"></path>
+    <path d="M13 6l6 6"></path>
+  </svg></a
+>

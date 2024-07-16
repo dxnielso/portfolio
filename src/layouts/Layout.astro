@@ -1,0 +1,68 @@
+---
+import "@fontsource-variable/azeret-mono";
+// import "@fontsource-variable/montserrat";
+// import "@fontsource-variable/space-grotesk"; // Supports weights 300-700
+import "@fontsource/poppins/100.css";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
+
+import SparklesBackgroundComponent from "../components/acertinity/SparklesBackgroundComponent";
+import GridLayout from "./GridLayout.astro";
+import CursorLight from "@/components/CursorLight";
+import SocialMedia from "@/components/SocialMedia.astro";
+import Navbar from "@/components/Navbar.jsx";
+// import { Meteors } from "@/components/ui/meteors";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Daniel Solis | Portafolio Web" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/DS_removebg.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body
+    class="relative overflow-x-hidden min-h-screen w-full mx-auto text-gray-100 h-full items-center [background:radial-gradient(100%_50%_at_105%_0%,rgba(60,70,93,1)_0%,rgba(0,0,0,1)_100%)]"
+  >
+    <CursorLight client:idle />
+    <SparklesBackgroundComponent client:idle />
+    <!-- <Meteors client:visible number={10} /> -->
+    <SocialMedia />
+    <Navbar client:visible />
+    <GridLayout>
+      <slot name="static" slot="static" />
+      <slot name="scroll" slot="scroll" />
+    </GridLayout>
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    /* font-family: "Azeret Mono Variable", monospace; */
+    /* font-family: 'Geist Sans', sans-serif; */
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Space Grotesk Variable", sans-serif; */
+    /* font-family: "Montserrat Variable", sans-serif; */
+  }
+</style>

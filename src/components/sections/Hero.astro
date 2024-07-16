@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import profilePicture from "@/assets/images/azul_uno_x_uno_v2.jpg";
+import AvailableCard from "@/components/AvailableCard.astro";
+import Skills from "@/components/Skills.astro";
+---
+
+<main
+  class="flex flex-col space-y-12 md:space-y-5 justify-between items-start h-full"
+>
+  <div class="flex flex-col gap-y-1.5 lg:gap-y-1">
+    <Image
+      src={profilePicture}
+      alt="Profile picture"
+      class="size-20 ring-4 rounded-full ring-white/20 mb-3"
+    />
+    <h1 class="text-5xl font-semibold font-azeret">Daniel Solís</h1>
+    <h2
+      class="font-azeret mb-1 2xl:mb-3 w-fit text-transparent text-xl font-semibold bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text"
+    >
+      Fullstack Developer
+    </h2>
+    <!-- <FlipWordsComponent client:idle /> -->
+    <p class="text-base font-light mb-2 2xl:mb-4 text-white/80">
+      Soy desarrollador de software especializado en frontend y backend,
+      enfocado en crear aplicaciones web modernas y escalables.
+    </p>
+    <AvailableCard available={true} />
+    <a
+      href=""
+      class="flex gap-x-2 relative z-100 outline-none px-4 py-2 font-normal text-base border-[0.1px] bg-white/10 hover:bg-zinc-900 border-white/30 text-white/90 duration-300 w-fit before:inset-0 before:bg-transparent before:hover:bg-white/50 before:content-[''] before:absolute before:hover:-translate-x-1 before:hover:translate-y-1 before:-z-10 before:duration-300"
+    >
+      <span>Curriculum</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-arrow-up-right w-5 h-5 stroke-[1.5px] stroke-[#c5c5c5] fill-none"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M17 7l-10 10"></path>
+        <path d="M8 7l9 0l0 9"></path>
+      </svg>
+    </a>
+    <!-- <ShimerButton /> -->
+  </div>
+  <Skills />
+  <!-- <SocialMedia /> -->
+</main>
+
+<style></style>
