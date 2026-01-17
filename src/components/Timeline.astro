@@ -1,6 +1,8 @@
 ---
 import TimelineEvent from "./TimelineEvent.astro";
 import Backpack from "./icons/Backpack.astro";
+import Briefcase from "./icons/Briefcase.astro";
+import Device from "./icons/Device.astro";
 import School from "./icons/School.astro";
 
 console.log(typeof Backpack);
@@ -8,11 +10,29 @@ console.log(typeof Backpack);
 
 <ol class="relative w-auto border-s border-gray-200 dark:border-gray-700 mx-5">
   <TimelineEvent
-    title="Ingeniería en Software"
+    title="Programador"
     current={true}
-    description="En la Universidad Politécnica de Pénjamo, me sumerjo en el mundo de la ingeniería en software, explorando el desarrollo web, móvil e inteligencia artificial para afrontar los desafíos tecnológicos del futuro."
-    date="1 de septiembre, 2021 - Actualmente"
-    school="Universidad Politécnica de Pénjamo"
+    description="Como programador en FLENSA, participo en el desarrollo de soluciones tecnológicas que mejoran procesos internos. Aplico buenas prácticas de programación y transformo los conocimientos adquiridos en la universidad en resultados concretos que aportan valor a la empresa."
+    date="enero, 2025 - Actualmente"
+    entidad="FLENSA"
+  >
+    <Briefcase />
+  </TimelineEvent>
+  <TimelineEvent
+    title="Practicante de Desarrollo de Software"
+    current={false}
+    description="Durante mis prácticas en FLENSA, trabajé junto a un equipo profesional en proyectos reales, aprendiendo metodologías de desarrollo y adaptándome al entorno corporativo. Esta experiencia fortaleció mis habilidades técnicas y me permitió comprender mejor la dinámica laboral."
+    date="agosto, 2024 - enero, 2025"
+    entidad="FLENSA"
+  >
+    <Device />
+  </TimelineEvent>
+  <TimelineEvent
+    title="Ingeniería en Software"
+    current={false}
+    description="En la Universidad Politécnica de Pénjamo, me sumergí en el mundo de la ingeniería en software, explorando el desarrollo web, móvil e inteligencia artificial para afrontar los desafíos tecnológicos del futuro."
+    date="1 de septiembre, 2021 - diciembre, 2024"
+    entidad="Universidad Politécnica de Pénjamo"
   >
     <School />
   </TimelineEvent>
@@ -20,7 +40,7 @@ console.log(typeof Backpack);
     title="Técnico en Programación"
     description="En mi bachillerato, obtuve el título de Técnico en Programación, donde adquirí sólidos fundamentos en desarrollo de software, preparándome para dar mis primeros pasos en el mundo tecnológico."
     date="20 de agosto, 2018 - 30 de junio, 2021"
-    school="CBTis 171"
+    entidad="CBTis 171"
   >
     <Backpack />
   </TimelineEvent>
