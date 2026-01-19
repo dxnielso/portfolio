@@ -1,4 +1,4 @@
-import type ITag from "./ITag";
+import type Skill from "./skill.interface";
 
 export default interface Project {
   id: number;
@@ -7,5 +7,5 @@ export default interface Project {
   image: ImageMetadata;
   link: string;
   github: string;
-  tags: ITag[];
+  tags: Skill[];
 }

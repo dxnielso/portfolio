@@ -1,11 +1,16 @@
+---
+const { title, class: clases } = Astro.props;
+---
+
 <svg
-  {...Astro.props}
+  class={clases}
   viewBox="0 0 256 154"
   width="256"
   height="154"
   xmlns="http://www.w3.org/2000/svg"
   preserveAspectRatio="xMidYMid"
 >
+  <title>{title}</title>
   <defs
     ><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="gradient">
       <stop stop-color="#2298BD" offset="0%"></stop>

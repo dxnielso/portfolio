@@ -4,8 +4,8 @@ import { Image } from "astro:assets";
 // import ImageProject from "../assets/spiderman.jpg";
 // import WoobleCardComponent from "../components/acertinity/WobbleCardComponent";
 import ThreeDCarsComponent from "@/components/acertinity/ThreeDCarsComponent";
+import type IProject from "@/interfaces/project.interface";
 import Tag from "./Tag.astro";
-import type IProject from "@/interfaces/IProject";
 
 interface Props {
   project: IProject;
@@ -15,7 +15,6 @@ const { id, title, description, image, link, github, tags } =
   Astro.props.project;
 ---
 
-<!-- <WoobleCardComponent client:idle > -->
 <ThreeDCarsComponent
   client:idle
   className="flex flex-col lg:flex-row items-start gap-x-5 overflow-hidden lg:min-h-fit rounded-md hover:bg-slate-50/5 [border-width:0.1px] border-transparent hover:border-white/10 duration-75 group"
@@ -76,4 +75,3 @@ const { id, title, description, image, link, github, tags } =
     </div>
   </div>
 </ThreeDCarsComponent>
-<!-- </WoobleCardComponent> -->

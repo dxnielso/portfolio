@@ -1,11 +1,16 @@
+---
+const { title, class: clases } = Astro.props;
+---
+
 <svg
-  {...Astro.props}
+  class={clases}
   width="180"
   height="180"
   viewBox="0 0 180 180"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
+  <title>{title}</title>
   <mask
     id="mask0_408_139"
     style="mask-type:alpha"

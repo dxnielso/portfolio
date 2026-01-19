@@ -4,9 +4,9 @@ interface Props {
   current?: boolean;
   date: string;
   description: string;
-  entidad: string;
+  entity: string;
 }
-const { title, current = false, date, description, entidad } = Astro.props;
+const { title, current = false, date, description, entity } = Astro.props;
 ---
 
 <li class="mb-10 ms-7">
@@ -29,7 +29,7 @@ const { title, current = false, date, description, entidad } = Astro.props;
     >{date}</span
   >
   <span class="block mb-2 text-base font-bold leading-none text-primary"
-    >{entidad}</span
+    >{entity}</span
   >
   <p class="text-base font-light text-white/80 leading-relaxed">
     {description}
