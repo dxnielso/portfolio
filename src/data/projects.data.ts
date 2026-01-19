@@ -21,7 +21,7 @@ const projects: Project[] = [
     description:
       "Desarrollé un sitio web que utiliza la API de Spotify para mostrar datos del usuario, replicando la interfaz de usuario de Spotify y utilizando Zustand para la gestión de estados y persistencia de datos.",
     image: SpotifyShot,
-    link: "/",
+    link: "https://spotify-stats-blue.vercel.app/",
     github: "https://github.com/dxnielso/spotify-stats",
     tags: skills.filter((skill) => [17, 14, 3, 4, 1, 5].includes(skill.id)),
   },
